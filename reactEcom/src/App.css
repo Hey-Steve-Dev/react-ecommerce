@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.companyDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* This centers both the logo and title */
+  padding-left: 25px;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+.companyTitle {
+  font-size: 14px;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+.companyTitle:hover {
+  cursor: pointer;
+}
+.companyLogo {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.hamburgerMenu {
+  color: white;
+  flex-direction: center;
+  justify-content: center;
+
+  cursor: pointer;
+  width: 33%;
+}
+.hamburgerMenu > svg {
+  font-size: 32px;
+}
+
+.displayBlock {
+  display: block !important;
+}
+.displayNone {
+  display: none !important;
+}
+.displayFlex {
+  display: flex !important;
+}
+
+.itemDescription {
+  max-height: 300px;
+  overflow: hidden;
+}
+.itemImage {
+  max-height: 200px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Start off-screen */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: translateX(0); /* End at its original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.slide-in {
+  animation: slideInFromLeft 0.5s ease-out; /* Apply the animation */
+  opacity: 1; /* Ensure it's visible after animation */
+}
+
+.homepageDiv {
+  text-align: left;
+  padding: 25px;
+}
+
+.HomepageH1 {
+  color: white;
+  font-weight: 700;
+}
+.HomepageH2 {
+  color: white;
+  font-weight: 400;
+  font-size: 35px;
+  text-decoration: none;
+}
+.HomepageH2 > a {
+  color: white;
+  text-decoration: none;
+}
+
+.shopPageH1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.shopPageH1 > a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+@media (max-width: 650px) {
+  .HomepageH1 {
+    font-weight: 700;
+    font-size: 45px;
+  }
+}
+
+/* Media query to make sure desktopMenu reappears on larger screens */
+@media (min-width: 651px) {
+  .HomepageH1 {
+    font-weight: 700;
+    font-size: 75px;
+  }
+}
+
+.callToAction {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 150px;
+  font-size: 35px;
+}
+
+.aboutPage {
+  text-align: left;
+
+  margin: 25px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
