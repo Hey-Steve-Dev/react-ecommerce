@@ -5,10 +5,7 @@ import About from "./About";
 import Home from "./Home";
 import Nav from "./Nav";
 import React from "react";
-import SearchForm from "./SearchForm";
-
 import { useState, useEffect } from "react";
-
 import ShoppingCart from "./ShoppingCart";
 
 function App() {
@@ -76,7 +73,7 @@ function App() {
   const uniqueItems = removeDuplicates(cartItems);
 
   return (
-    <div className="App">
+    <div className="App fadeIn">
       <Nav cartItems={cartItems} search={search} setSearch={setSearch} />
 
       <Routes>

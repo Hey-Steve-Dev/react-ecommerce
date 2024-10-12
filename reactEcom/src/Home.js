@@ -4,6 +4,8 @@ import CallToAction from "./CallToAction";
 import homepageHero from "./Images/HomepageHero.jpg";
 
 function Home() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div
       className="homepageDiv"
@@ -31,7 +33,8 @@ function Home() {
           target="_blank"
           rel="nofollow noopener noreferrer"
         >
-          HeySteve.Dev
+          HeySteve.Dev <br />
+          <p>© {currentYear} Hey-Steve-Dev</p>
         </a>
       </h2>
     </div>
